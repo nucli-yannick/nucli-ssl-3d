@@ -1,0 +1,73 @@
+train:
+  nuclarity_test:
+    chul:
+      fdg:
+        pairs:
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+        patients: 30
+      ga_psma:
+        pairs:
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+        patients: 3
+    azg:
+      fdg:
+        pairs:
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+        patients: 28
+      dota:
+        pairs:
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+        patients: 9
+      ga_psma:
+        pairs:
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+        patients: 20
+    uzg:
+      f_psma:
+        pairs:
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+        patients: 8
+      ga_psma:
+        pairs:
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+        patients: 40
+patch_size: [64, 64, 64]
+src_dir: /home/vicde/data/
+save_dir: /home/vicde/blosc2_nuclarity_test/
+storage-type: blosc2
+target_spacing: [2.734375, 2.734375, 3.2700]

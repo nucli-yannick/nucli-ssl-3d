@@ -1,0 +1,8 @@
+
+
+train:
+  type: blosc2_dataset
+  params:
+    config_path: /home/vicde/nucli-train/train_example.yaml
+  batch_size: 2
+  num_workers: 7

@@ -1,0 +1,17 @@
+train:
+  type: blosc2_dataset
+  params:
+    config_path: /home/ec2-user/nnssl/examples/MAE/train_MIM.yaml
+  batch_size: 16
+  num_workers: 7
+val:
+  datasets:
+    psma:
+      type: blosc2_dataset
+      params:
+        config_path: /home/ec2-user/nnssl/examples/MAE/val_MIM.yaml
+      evaluators:
+        - save-preds-MIM
+  batch_size: 32
+  num_workers: 4
+  global_eval_interval: 5

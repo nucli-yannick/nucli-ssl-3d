@@ -1,0 +1,26 @@
+
+
+model:
+  name: MAE
+  args:
+    network:
+      name: convnextv2-3d  
+      args:
+        encoder_block: SparseResBlock3D
+        decoder_block: ResBlock3D
+        patch_size: 16
+        depths: [6, 9, 6]
+        dims: [96, 192, 384]
+        drop_path_rate: 0.0
+        head_init_scale: 1.0
+        in_chans: 1
+        decoder_embed_dim: 384
+        decoder_depth: 1
+        lr: 3e-4
+        learnable_mask_token: True
+    losses:
+      - name: ConvnextMAELoss
+        args: 
+          patch_size: 16
+        coef: 1.0
+    

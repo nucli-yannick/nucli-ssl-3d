@@ -1,0 +1,56 @@
+
+
+
+      
+
+
+model:
+  name: MAE
+  args:
+    network:
+      name: sparse-unet
+      args:
+        input_processor: 
+          name: identity
+        output_processor: 
+          name: identity
+        encoder_features: [32, 64, 128]
+        decoder_features: [32, 64, 128]
+        bottleneck_features: 256
+
+
+
+        encoder_block:
+           name: sparse-denoising-block
+           args:
+              dense: False
+              residual: False
+              convs: 2
+
+        decoder_block:
+           name: simple-decoder-block
+
+        input_block:
+           name: sparse-denoising-block
+           args:
+              dense: False
+              residual: False
+              convs: 1
+        output_block:
+           name: 3x3-output-block
+
+        downsample_op:
+           name: sparse-2x2-conv
+
+
+        convolution:
+          dim: 3d
+          normalization: 
+             name: layernorm
+
+        type: regular
+        
+    losses:
+      - name: L1Loss
+        args: {}  # No additional arguments for L1Loss
+        coef: 1.0

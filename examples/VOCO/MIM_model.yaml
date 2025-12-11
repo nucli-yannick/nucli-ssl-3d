@@ -1,0 +1,51 @@
+
+      
+
+
+model:
+  name: VoCo
+  args:
+    network:
+      name: encoder_unet
+      args:
+        input_processor: 
+          name: identity
+        output_processor: 
+          name: identity
+        encoder_features: [16, 32, 32, 64, 64, 64]
+        decoder_features: [16, 32, 64]
+        bottleneck_features: 256
+
+
+
+        encoder_block:
+           name: denoising-block
+           args:
+              dense: False
+              residual: False
+              convs: 2
+
+        decoder_block:
+           name: simple-decoder-block
+
+        input_block:
+           name: denoising-block
+           args:
+              dense: False
+              residual: False
+              convs: 1
+        output_block:
+           name: 3x3-output-block
+
+        downsample_op:
+           name: AvgPool
+
+
+        convolution:
+          dim: 3d
+          normalization: 
+             name: LayerNorm
+    losses:
+      - name: vocoloss
+        args: {}  # No additional arguments for L1Loss
+        coef: 1.0

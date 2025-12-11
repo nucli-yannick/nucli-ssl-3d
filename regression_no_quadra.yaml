@@ -1,0 +1,526 @@
+
+
+train:
+  nuclarity_test:
+    azg:
+      dota:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          10pc:
+            inputs: [10pc]
+            targets: [100pc]
+        patients:
+          - azg001
+          - azg002
+          - azg009
+          - azg016
+          - azg021
+          - azg022
+          - azg031
+          - azg042
+          - azg045
+          - azg046
+          - azg047
+      fdg:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          10pc:
+            inputs: [10pc]
+            targets: [100pc]
+        patients:
+          - azg002
+          - azg004
+          - azg005
+          - azg006
+          - azg007
+          - azg008
+          - azg009
+          - azg010
+          - azg011
+          - azg012
+          - azg013
+          - azg014
+          - azg015
+          - azg016
+          - azg017
+          - azg018
+          - azg019
+          - azg020
+          - azg021
+          - azg022
+          - azg023
+          - azg025
+          - azg026
+          - azg027
+          - azg028
+          - azg029
+          - azg030
+          - azg031
+          - azg032
+      ga_psma:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          10pc:
+            inputs: [10pc]
+            targets: [100pc]
+        patients:
+          - azg001
+          - azg002
+          - azg011
+          - azg022
+          - azg028
+          - azg032
+          - azg033
+          - azg034
+          - azg035
+          - azg049
+          - azg052
+          - azg053
+          - azg054
+          - azg063
+          - azg072
+          - azg079
+          - azg082
+          - azg083
+          - azg087
+          - azg089
+          - azg098
+          - azg106
+          - azg116
+    chul:
+      fdg:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          10pc:
+            inputs: [10pc]
+            targets: [100pc]
+        patients:
+          - chul001
+          - chul002
+          - chul021
+          - chul028
+          - chul029
+          - chul037
+          - chul042
+          - chul043
+          - chul053
+          - chul054
+          - chul060
+          - chul061
+          - chul067
+          - chul077
+          - chul078
+          - chul085
+          - chul086
+          - chul094
+          - chul097
+          - chul103
+          - chul104
+          - chul105
+          - chul113
+          - chul132
+          - chul137
+          - chul141
+          - chul149
+          - chul995
+          - chul996
+          - chul999
+      ga_psma:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          10pc:
+            inputs: [10pc]
+            targets: [100pc]
+        patients:
+          - chul151
+          - chul156
+          - chul164
+  udpet2024:
+    united_imaging:
+      dota:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          10pc:
+            inputs: [10pc]
+            targets: [100pc]
+        patients:
+          - Anonymous_ANO_20220224_1701584_113106
+          - Anonymous_ANO_20220224_1703593_111906
+          - Anonymous_ANO_20220224_1705576_110625
+          - Anonymous_ANO_20220224_1707578_105431
+          - Anonymous_ANO_20220224_1835039_111917
+          - Anonymous_ANO_20220224_1837073_110801
+          - Anonymous_ANO_20220224_1841037_104500
+          - Anonymous_ANO_20220224_1843069_103247
+          - Anonymous_ANO_20220225_1839121_104145
+          - Anonymous_ANO_20220225_1842090_105509
+          - Anonymous_ANO_20220225_1845087_110747
+          - Anonymous_ANO_20220601_1641043_110334
+          - Anonymous_ANO_20220601_1643526_111514
+          - Anonymous_ANO_20220601_1646408_112622
+          - Anonymous_ANO_20220601_1649264_113812
+      fdg:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          10pc:
+            inputs: [10pc]
+            targets: [100pc]
+        patients:
+          - Anonymous_ANO_20220219_1732232_105648
+          - Anonymous_ANO_20220219_1733565_103855
+          - Anonymous_ANO_20220219_1735353_102751
+          - Anonymous_ANO_20220219_1737125_101655
+          - Anonymous_ANO_20220219_1738495_100528
+          - Anonymous_ANO_20220219_1740233_095315
+          - Anonymous_ANO_20220219_1751342_161959
+          - Anonymous_ANO_20220219_1753123_110729
+          - Anonymous_ANO_20220219_1754493_105559
+          - Anonymous_ANO_20220219_1756258_104412
+          - Anonymous_ANO_20220219_1758052_103239
+          - Anonymous_ANO_20220219_1801082_101952
+          - Anonymous_ANO_20220219_2039005_105744
+          - Anonymous_ANO_20220219_2040339_104641
+          - Anonymous_ANO_20220219_2042083_103504
+          - Anonymous_ANO_20220219_2043448_102438
+          - Anonymous_ANO_20220219_2349143_111325
+          - Anonymous_ANO_20220219_2351141_110156
+          - Anonymous_ANO_20220219_2353217_105007
+          - Anonymous_ANO_20220219_2355298_111406
+          - Anonymous_ANO_20220219_2357431_110210
+          - Anonymous_ANO_20220219_2359467_105053
+          - Anonymous_ANO_20220220_0001544_104008
+          - Anonymous_ANO_20220220_0004038_102914
+          - Anonymous_ANO_20220220_0006132_101735
+          - Anonymous_ANO_20220220_0008144_115718
+          - Anonymous_ANO_20220220_0010160_114417
+          - Anonymous_ANO_20220220_0012177_113235
+          - Anonymous_ANO_20220220_0014264_111924
+          - Anonymous_ANO_20220220_0016325_110541
+          - Anonymous_ANO_20220220_0018459_105257
+          - Anonymous_ANO_20220220_0020472_104014
+          - Anonymous_ANO_20220220_0022596_102755
+          - Anonymous_ANO_20220223_1727464_120046
+          - Anonymous_ANO_20220223_1731211_114807
+          - Anonymous_ANO_20220223_1734253_113619
+          - Anonymous_ANO_20220223_1737343_112341
+          - Anonymous_ANO_20220223_1740394_111123
+          - Anonymous_ANO_20220223_1743509_110023
+          - Anonymous_ANO_20220223_1747043_104802
+          - Anonymous_ANO_20220223_1750167_135707
+          - Anonymous_ANO_20220223_1753176_134618
+          - Anonymous_ANO_20220223_1756291_133409
+          - Anonymous_ANO_20220223_1759302_132246
+          - Anonymous_ANO_20220223_1802385_131026
+          - Anonymous_ANO_20220223_1805372_125734
+          - Anonymous_ANO_20220223_1808426_124458
+          - Anonymous_ANO_20220223_1811422_123305
+          - Anonymous_ANO_20220223_1814480_122240
+          - Anonymous_ANO_20220223_1817588_121222
+          - Anonymous_ANO_20220223_1821076_120131
+          - Anonymous_ANO_20220223_1824091_115004
+          - Anonymous_ANO_20220223_1827153_113812
+          - Anonymous_ANO_20220223_1830143_112622
+          - Anonymous_ANO_20220223_1833007_111411
+          - Anonymous_ANO_20220223_1836013_164626
+          - Anonymous_ANO_20220223_1839061_163504
+          - Anonymous_ANO_20220223_1842140_162409
+          - Anonymous_ANO_20220223_1845179_161249
+          - Anonymous_ANO_20220223_1848202_160114
+          - Anonymous_ANO_20220223_1851295_154511
+          - Anonymous_ANO_20220223_1854344_153125
+          - Anonymous_ANO_20220223_1857483_151834
+          - Anonymous_ANO_20220223_1900538_150528
+          - Anonymous_ANO_20220224_1555293_145459
+          - Anonymous_ANO_20220224_1558333_144414
+          - Anonymous_ANO_20220224_1601460_143336
+          - Anonymous_ANO_20220224_1604568_141627
+          - Anonymous_ANO_20220224_1608042_111131
+          - Anonymous_ANO_20220224_1611076_110013
+          - Anonymous_ANO_20220224_1614173_104758
+          - Anonymous_ANO_20220224_1617186_103719
+          - Anonymous_ANO_20220224_1620346_144456
+          - Anonymous_ANO_20220224_1623341_143321
+          - Anonymous_ANO_20220224_1626425_140253
+          - Anonymous_ANO_20220224_1629422_135106
+          - Anonymous_ANO_20220224_1632339_133922
+          - Anonymous_ANO_20220224_1635286_132644
+          - Anonymous_ANO_20220224_1638361_131356
+          - Anonymous_ANO_20220224_1641362_125319
+          - Anonymous_ANO_20220224_1644380_124128
+          - Anonymous_ANO_20220224_1647377_123042
+          - Anonymous_ANO_20220224_1650397_121715
+          - Anonymous_ANO_20220224_1653399_120543
+          - Anonymous_ANO_20220224_1656455_115423
+          - Anonymous_ANO_20220224_1659520_114219
+          - Anonymous_ANO_20220224_1709580_104139
+          - Anonymous_ANO_20220224_1711567_102845
+          - Anonymous_ANO_20220224_1713571_101453
+          - Anonymous_ANO_20220224_1716024_143907
+          - Anonymous_ANO_20220224_1718041_142742
+          - Anonymous_ANO_20220224_1720047_141442
+          - Anonymous_ANO_20220224_1722076_140215
+          - Anonymous_ANO_20220224_1724059_135148
+          - Anonymous_ANO_20220224_1726094_134112
+          - Anonymous_ANO_20220224_1728164_133046
+          - Anonymous_ANO_20220224_1730226_131952
+          - Anonymous_ANO_20220224_1732305_130820
+          - Anonymous_ANO_20220224_1734340_125704
+          - Anonymous_ANO_20220224_1736390_124613
+          - Anonymous_ANO_20220224_1738412_123455
+          - Anonymous_ANO_20220224_1740454_130820
+          - Anonymous_ANO_20220224_1742222_122441
+          - Anonymous_ANO_20220224_1744219_121048
+          - Anonymous_ANO_20220224_1746263_115755
+          - Anonymous_ANO_20220224_1748272_114615
+          - Anonymous_ANO_20220224_1750256_113211
+          - Anonymous_ANO_20220224_1752321_112111
+          - Anonymous_ANO_20220224_1754324_111025
+          - Anonymous_ANO_20220224_1756320_105853
+          - Anonymous_ANO_20220224_1758364_104411
+          - Anonymous_ANO_20220224_1800359_105024
+          - Anonymous_ANO_20220224_1802362_103843
+          - Anonymous_ANO_20220224_1804402_102647
+          - Anonymous_ANO_20220224_1806386_110123
+          - Anonymous_ANO_20220224_1808419_103947
+          - Anonymous_ANO_20220224_1810447_102854
+          - Anonymous_ANO_20220224_1812466_101333
+          - Anonymous_ANO_20220224_1814463_100049
+          - Anonymous_ANO_20220224_1816515_112110
+          - Anonymous_ANO_20220224_1818505_110543
+          - Anonymous_ANO_20220224_1820501_104423
+          - Anonymous_ANO_20220224_1822527_103052
+          - Anonymous_ANO_20220224_1824561_122859
+          - Anonymous_ANO_20220224_1826572_121743
+          - Anonymous_ANO_20220224_1828586_120633
+          - Anonymous_ANO_20220224_1831028_115350
+          - Anonymous_ANO_20220224_1833020_114003
+          - Anonymous_ANO_20220224_1839044_105624
+          - Anonymous_ANO_20220224_1845053_101824
+          - Anonymous_ANO_20220224_1847066_100500
+          - Anonymous_ANO_20220224_1849121_095111
+          - Anonymous_ANO_20220224_1851132_093851
+          - Anonymous_ANO_20220224_1853122_095335
+          - Anonymous_ANO_20220224_1855152_094101
+          - Anonymous_ANO_20220224_1857145_143911
+          - Anonymous_ANO_20220224_1859145_141658
+          - Anonymous_ANO_20220224_1901188_135958
+          - Anonymous_ANO_20220224_1903185_134202
+          - Anonymous_ANO_20220224_1905184_132425
+          - Anonymous_ANO_20220224_1907217_125928
+          - Anonymous_ANO_20220224_1909185_124615
+          - Anonymous_ANO_20220224_1911188_123428
+          - Anonymous_ANO_20220224_1913231_122318
+          - Anonymous_ANO_20220224_1915238_121035
+          - Anonymous_ANO_20220224_1917267_115940
+          - Anonymous_ANO_20220224_1919316_114811
+          - Anonymous_ANO_20220224_1921315_113528
+          - Anonymous_ANO_20220224_1923320_112338
+          - Anonymous_ANO_20220224_1925376_111131
+          - Anonymous_ANO_20220224_1927362_105904
+          - Anonymous_ANO_20220224_1929371_104506
+          - Anonymous_ANO_20220224_1931443_103339
+          - Anonymous_ANO_20220224_2003475_102140
+          - Anonymous_ANO_20220224_2005492_100913
+          - Anonymous_ANO_20220224_2007532_095745
+          - Anonymous_ANO_20220224_2009588_094505
+          - Anonymous_ANO_20220224_2011588_093132
+          - Anonymous_ANO_20220224_2014013_121239
+          - Anonymous_ANO_20220224_2016067_120034
+          - Anonymous_ANO_20220224_2018080_114816
+          - Anonymous_ANO_20220224_2020086_113054
+          - Anonymous_ANO_20220224_2022158_111711
+          - Anonymous_ANO_20220224_2024170_110225
+          - Anonymous_ANO_20220224_2026208_104505
+          - Anonymous_ANO_20220224_2028276_103025
+          - Anonymous_ANO_20220224_2030308_095348
+          - Anonymous_ANO_20220224_2032228_104913
+          - Anonymous_ANO_20220224_2034287_103357
+          - Anonymous_ANO_20220224_2036301_102141
+          - Anonymous_ANO_20220224_2038311_100143
+          - Anonymous_ANO_20220224_2040387_094954
+          - Anonymous_ANO_20220224_2042410_093815
+          - Anonymous_ANO_20220224_2044439_100923
+          - Anonymous_ANO_20220225_1831356_100437
+          - Anonymous_ANO_20220225_1834418_101659
+          - Anonymous_ANO_20220225_1836314_102905
+          - Anonymous_ANO_20220225_1848041_112007
+          - Anonymous_ANO_20220225_1851046_113142
+          - Anonymous_ANO_20220225_1854088_114519
+          - Anonymous_ANO_20220225_1857138_115737
+          - Anonymous_ANO_20220225_1900230_121350
+          - Anonymous_ANO_20220225_1903242_122604
+          - Anonymous_ANO_20220225_1906255_123627
+          - Anonymous_ANO_20220225_1909224_124802
+          - Anonymous_ANO_20220225_1912289_093450
+          - Anonymous_ANO_20220225_1915288_094613
+          - Anonymous_ANO_20220225_1918300_095727
+          - Anonymous_ANO_20220225_1921290_101324
+          - Anonymous_ANO_20220225_1924401_102628
+          - Anonymous_ANO_20220225_1927450_103935
+          - Anonymous_ANO_20220225_1930396_105137
+          - Anonymous_ANO_20220225_1933412_110551
+          - Anonymous_ANO_20220601_1453091_091227
+          - Anonymous_ANO_20220601_1455551_092409
+          - Anonymous_ANO_20220601_1458457_094546
+          - Anonymous_ANO_20220601_1501363_095854
+          - Anonymous_ANO_20220601_1504271_101241
+          - Anonymous_ANO_20220601_1507154_102535
+          - Anonymous_ANO_20220601_1509571_103736
+          - Anonymous_ANO_20220601_1512527_104859
+          - Anonymous_ANO_20220601_1515483_112411
+          - Anonymous_ANO_20220601_1520216_113656
+          - Anonymous_ANO_20220601_1523117_114746
+          - Anonymous_ANO_20220601_1526013_094916
+          - Anonymous_ANO_20220601_1528473_100001
+          - Anonymous_ANO_20220601_1531406_102425
+          - Anonymous_ANO_20220601_1534412_103452
+          - Anonymous_ANO_20220601_1537410_110037
+          - Anonymous_ANO_20220601_1540263_111339
+          - Anonymous_ANO_20220601_1543337_121533
+          - Anonymous_ANO_20220601_1546299_090921
+          - Anonymous_ANO_20220601_1549265_092230
+          - Anonymous_ANO_20220601_1552172_093431
+          - Anonymous_ANO_20220601_1555126_094625
+          - Anonymous_ANO_20220601_1558057_100130
+          - Anonymous_ANO_20220601_1601030_101430
+          - Anonymous_ANO_20220601_1603535_102617
+          - Anonymous_ANO_20220601_1606448_103822
+          - Anonymous_ANO_20220601_1609418_105719
+          - Anonymous_ANO_20220601_1612208_134319
+          - Anonymous_ANO_20220601_1615107_135432
+          - Anonymous_ANO_20220601_1617582_140523
+          - Anonymous_ANO_20220601_1620493_094059
+          - Anonymous_ANO_20220601_1623342_095153
+          - Anonymous_ANO_20220601_1626344_100325
+          - Anonymous_ANO_20220601_1629303_101543
+          - Anonymous_ANO_20220601_1632259_102601
+          - Anonymous_ANO_20220601_1635170_103746
+          - Anonymous_ANO_20220601_1638116_105237
+          - Anonymous_ANO_20220601_1652209_093618
+          - Anonymous_ANO_20220601_1655144_094902
+          - Anonymous_ANO_20220601_1658164_100130
+          - Anonymous_ANO_20220601_1701160_101338
+          - Anonymous_ANO_20220601_1704112_102458
+          - Anonymous_ANO_20220601_1707072_103738
+          - Anonymous_ANO_20220601_1710060_105548
+          - Anonymous_ANO_20220601_1712547_110856
+          - Anonymous_ANO_20220601_1715523_112053
+          - Anonymous_ANO_20220601_1718430_113237
+          - Anonymous_ANO_20220601_1721419_092711
+          - Anonymous_ANO_20220601_1724326_093820
+          - Anonymous_ANO_20220601_1727225_095112
+          - Anonymous_ANO_20220601_1730122_100329
+          - Anonymous_ANO_20220601_1733074_101538
+          - Anonymous_ANO_20220601_1736009_102633
+          - Anonymous_ANO_20220601_1738472_103824
+          - Anonymous_ANO_20220601_1741448_104934
+          - Anonymous_ANO_20220601_1744339_110231
+          - Anonymous_ANO_20220601_1747310_092729
+          - Anonymous_ANO_20220601_1750319_093853
+          - Anonymous_ANO_20220601_1753302_095110
+          - Anonymous_ANO_20220601_1756215_100149
+          - Anonymous_ANO_20220601_1759180_101332
+          - Anonymous_ANO_20220601_1802119_102505
+          - Anonymous_ANO_20220601_1805064_104854
+          - Anonymous_ANO_20220601_1808026_093421
+          - Anonymous_ANO_20220601_1811028_094616
+          - Anonymous_ANO_20220601_1813559_095724
+          - Anonymous_ANO_20220602_1526284_094229
+          - Anonymous_ANO_20220602_1528034_095541
+          - Anonymous_ANO_20220602_1529454_100702
+          - Anonymous_ANO_20220602_1531179_092859
+          - Anonymous_ANO_20220602_1532544_101834
+          - Anonymous_ANO_20220602_1534294_105153
+          - Anonymous_ANO_20220630_1507103_093852
+          - Anonymous_ANO_20220630_1510225_095012
+          - Anonymous_ANO_20220630_1513301_100140
+          - Anonymous_ANO_20220630_1516434_101356
+          - Anonymous_ANO_20220630_1519523_102601
+          - Anonymous_ANO_20220630_1523109_104057
+          - Anonymous_ANO_20220630_1525567_105311
+          - Anonymous_ANO_20220630_1529123_111151
+          - Anonymous_ANO_20220630_1532204_112751
+          - Anonymous_ANO_20220630_1535367_113951
+          - Anonymous_ANO_20220630_1538393_135204
+          - Anonymous_ANO_20220630_1541583_091122
+          - Anonymous_ANO_20220630_1545193_092511
+          - Anonymous_ANO_20220630_1548403_093720
+          - Anonymous_ANO_20220630_1551465_105420
+          - Anonymous_ANO_20220630_1555008_110523
+          - Anonymous_ANO_20220704_1415498_090758
+          - Anonymous_ANO_20220704_1418029_092115
+          - Anonymous_ANO_20220704_1420176_093227
+          - Anonymous_ANO_20220704_1422374_094616
+          - Anonymous_ANO_20220704_1425174_095800
+          - Anonymous_ANO_20220704_1427304_102508
+          - Anonymous_ANO_20220704_1429445_103714
+          - Anonymous_ANO_20220704_1432027_104818
+          - Anonymous_ANO_20220704_1434344_105857
+          - Anonymous_ANO_20220706_1706266_111128
+          - Anonymous_ANO_20220706_1708092_112419
+          - Anonymous_ANO_20220706_1709514_113616
+          - Anonymous_ANO_20220706_1711364_114813
+          - Anonymous_ANO_20220706_1713212_115854
+          - Anonymous_ANO_20220706_1715037_120857
+          - Anonymous_ANO_20220706_1716471_121904
+          - Anonymous_ANO_20220706_1718331_122924
+      ga:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+          25pc:
+            inputs: [25pc]
+            targets: [100pc]
+          10pc:
+            inputs: [10pc]
+            targets: [100pc]
+        patients:
+          - Anonymous_ANO_20220219_1742004_172620
+          - Anonymous_ANO_20220219_1743360_171420
+          - Anonymous_ANO_20220219_1745110_170329
+          - Anonymous_ANO_20220219_1746459_165142
+          - Anonymous_ANO_20220219_1748239_164059
+          - Anonymous_ANO_20220219_1749589_163033
+
+
+patch_size: [64, 64, 64]
+src_dir: /home/vicde/data/
+save_dir: /home/vicde/blosc2_64/
+storage-type: blosc2
+target_spacing: [2.734375, 2.734375, 3.2700]

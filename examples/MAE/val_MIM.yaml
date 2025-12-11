@@ -1,0 +1,16 @@
+data:
+  nuclarity_train:
+    azg:
+      ga_psma:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: []
+          100pc:
+            inputs: [100pc]
+            targets: []
+        patients: all
+patch_size: [64, 64, 64]
+src_dir: /home/vicde/blosc2_64
+storage-type: blosc2
+target_spacing: [2.734375, 2.734375, 3.2700]

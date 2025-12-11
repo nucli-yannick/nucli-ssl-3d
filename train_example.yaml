@@ -1,0 +1,21 @@
+
+
+data:
+  nuclarity_train:
+    azg:
+      fdg:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+        patients: all
+      dota:
+        pairs:
+          50pc:
+            inputs: [50pc]
+            targets: [100pc]
+        patients: all
+patch_size: [64, 64, 32]
+src_dir: /home/vicde/blosc2_64
+storage-type: blosc2
+target_spacing: [2.734375, 2.734375, 3.2700]

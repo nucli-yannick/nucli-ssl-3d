@@ -1,0 +1,40 @@
+
+
+train:
+  type: blosc2_dataset
+  params:
+    src_dir: /home/ec2-user/volume/data/blosc2/
+  batch_size: 2
+  num_workers: 7
+
+
+val:
+  datasets:
+    overfit-monitor:
+      type: patches_dataset_builder
+      path: /home/ec2-user/volume/basic-experiments/experiments/chul_train/splits.yaml
+      evaluators:
+        - save-preds
+      interval: 10
+    chul_25pc_quant:
+      type: patches_dataset_quantification
+      interval: 10
+      params:
+        path_to_lc: /home/ec2-user/volume/data/udpet/chul/fdg/ROIs/25pc.npy
+        path_to_sc: /home/ec2-user/volume/data/udpet/chul/fdg/ROIs/100pc.npy
+      evaluators:
+        - first-order-quantification-evaluator
+        - save-preds
+    chul_50pc_quant:
+      type: patches_dataset_quantification
+      params:
+        path_to_lc: /home/ec2-user/volume/data/udpet/chul/fdg/ROIs/50pc.npy
+        path_to_sc: /home/ec2-user/volume/data/udpet/chul/fdg/ROIs/100pc.npy
+      evaluators:
+        - first-order-quantification-evaluator
+        - save-preds
+      interval: 10
+  batch_size: 64
+  num_workers: 4
+  global-eval-interval: 2
+

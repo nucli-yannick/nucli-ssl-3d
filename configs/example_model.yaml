@@ -1,0 +1,60 @@
+
+
+
+      
+
+
+model:
+  name: ImageTranslationModel
+  args:
+    network:
+      name: UNet
+      args:
+        input_processor: 
+          name: 3-channel
+        output_processor: 
+          name: residual
+        encoder_features: [16, 32]
+        decoder_features: [16, 32]
+        bottleneck_features: 64
+
+
+
+        encoder_block:
+           name: denoising-block
+           args:
+              dense: False
+              residual: False
+              convs: 2
+
+        decoder_block:
+           name: simple-decoder-block
+
+        input_block:
+           name: denoising-block
+           args:
+              dense: False
+              residual: False
+              convs: 1
+        output_block:
+           name: 3x3-output-block
+
+        downsample_op:
+           name: AvgPool
+
+
+        convolution:
+          dim: 3d
+          normalization: 
+             name: LayerNorm
+    losses:
+      - name: L1Loss
+        args: {}  # No additional arguments for L1Loss
+        coef: 0.1
+      - name: PerceptualLossMedicalNet
+        coef: 0.5
+        args:
+          layers: 
+                  - layer1.0.bn2
+                  - layer2.0.bn2
+          weights: [0.5, 0.5]

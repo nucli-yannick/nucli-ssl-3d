@@ -1,9 +1,4 @@
 
-
-
-      
-
-
 model:
   name: ImageTranslationModel
   args:

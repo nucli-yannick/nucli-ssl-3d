@@ -1,4 +1,4 @@
-name: nucli
+name: ssl-3d
 channels:
   - defaults
   - conda-forge
@@ -196,4 +196,4 @@ dependencies:
       - virtualenv==20.34.0
       - werkzeug==3.1.3
       - zipp==3.23.0
-prefix: /home/interns_nuclivision_com/miniconda3/envs/nucli
+prefix: /home/ybr/miniconda3/envs/ssl-3d
